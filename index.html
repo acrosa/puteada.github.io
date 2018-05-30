@@ -1,1 +1,39 @@
-Hello World
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <style>
+        html {
+            font-size: 13px;
+        }
+
+        body {
+            font-family: 'Passion One', cursive;
+            font-size: 3rem;
+            padding: 2em;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="puteada">Hello GORDO come milanesas</h1>
+</body>
+
+<script>
+    var uno = ["Gordo", "Obeso", "Redondel", "Voluminoso", "Robusto", "Rollizo", "Adiposo", "Gordinflón", "Rechoncho", "Regordete"];
+    var dos = ["Catador", "Asesino", "Genocida", "Aniquilador", "Consumidor", "Destructor serial", "Cementerio", "Homicida", "Termotanque", "Devastador"
+    ];
+    var tres = ["De Canelones", "De Albondigas", "De Tortas Fritas", "De Panchos", "De Ravioles", "De Mc Donalds", "De Milanesas", "De Achuras", "De Empanadas", "De Guisos"];
+    var random1 = Math.floor(Math.random() * uno.length);
+    var random2 = Math.floor(Math.random() * dos.length);
+    var random3 = Math.floor(Math.random() * tres.length);
+    document.getElementById("puteada").innerHTML = uno[random1] + " " + dos[random2] + " " + tres[random3];
+</script>
+
+</html>
